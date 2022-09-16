@@ -77,6 +77,9 @@ def insertIntoLocalDB(dictionary): #This is used to create a function to insert 
              f"VALUES ('{dictionary['Prediction Time']}', '{dictionary['Text']}', '{dictionary['Flag']}')")
     #execute :  used to execute the query
     #INSERT INTO PREDICTIONS(CREATION_TIME, TEXT_BODY, FLAG) :  used to insert the data into the local database
+    #f"values means that the values are in the form of string
+    #VALUES ('{dictionary['Prediction Time']}', '{dictionary['Text']}', '{dictionary['Flag']}') :  used to insert the data into the local database
+
     
     local_db.commit() #This is used to commit the changes
     local_db.close() #This is used to close the connection
