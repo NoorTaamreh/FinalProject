@@ -24,7 +24,7 @@ conf = {
 #conf is used to connect to the firebase database using the api key
 
 firebase = pyrebase.initialize_app(conf) #This is used to initialize the firebase database
-db = firebase.database() #This function is used to insert the data into the local database
+db = firebase.database() #firebase.database() #This is used to connect to the firebase database
 
 
 with open('LogisticModelVer2.pkl', 'rb') as pkl: #This is used to open the logistic model
