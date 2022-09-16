@@ -7,4 +7,9 @@ The accuracy score of the training data is 0.99 and for the testing data is 0.96
 
 Dataset: https://data.mendeley.com/datasets/67mhx6hhzd/1 
 
+This is version2 of he the final project.
+In this version of the final project, I added comments for the python codes.
+I enhanced the API interface.
+I edited the model which I used in version 1 of the project.
+
 #HTU-Data Science & AI
