@@ -41,7 +41,7 @@ with open('tfidfVer2.pkl', 'rb') as tfidf: #This is used to open the tfidf model
 
 def predict(): #This is used to create a function for the prediction
     if request.method == 'POST':
-        text = request.form['news'] #This is used to get the news from the firebase database
+        text = request.form['news'] 
         transformed = tfidf.transform([text]) #tfidf.transform :  used to transform the text into a vector form 
         result = model.predict(transformed)[0] #This is used to predict the news
         ct = datetime.datetime.now() #This is used to get the current time
