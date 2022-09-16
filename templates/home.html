@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  
+    <!-- Make it compatible to mobile devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Final Project API</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+</head>
+<body style="background-color:rgb(249, 249, 249);">
+
+	<header>
+		<div>
+		<div>
+			<h1 style="background-color:black; color: white; font-size:300%; text-align:center;">
+				Fake News Detection <br> Using Machine Language</h1> 
+		</div> 	
+	</div>
+	</header>
+
+	<div align = "center">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<h1 style="border:2px solid black; text-align:center";>Enter The News Text You Want To Predict If it's Real Or Fake </h1>
+	
+		<textarea name="news" rows="12" cols="70" placeholder="Please Enter The Text Here" style="text-align: center;" ;></textarea>
+		<br><br>
+		<input type="submit" value="Predict" >
+		
+	    </form>
+
+
+        <form action="{{ url_for('predict')}}" method="GET">
+        <h1 style="border:2px solid black;"> Get Historical Data</h1>
+    
+        <input type="submit" value="Get Historical Data" >
+            
+        </form>
+
+		
+	</div>
+ 
+	<br>
+
+
+</body>
+</html>
